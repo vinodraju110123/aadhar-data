@@ -1,12 +1,65 @@
-# React + Vite
+# Aadhar Directory App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to add and retrieve personal information using **localStorage**, styled with **Tailwind CSS**, and powered by **React Router** for navigation.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add New Person with dynamic rows
+- ✅ Auto-calculates Age from Date of Birth
+- ✅ Validates Aadhar (12 digits) and Mobile Number (10 digits)
+- ✅ Saves records to localStorage
+- ✅ Retrieve Person Info by Aadhar Number
+- ✅ Tailwind CSS for responsive UI
+- ✅ React Router for smooth navigation
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+### Add New Person
+- Add multiple rows dynamically
+- Save/Delete individual records
+- Fields required and validated before saving
+
+### Retrieve Person Info
+- Search using Aadhar Number
+- Displays record or "No match found"
+
+---
+
+## 🛠️ Technologies Used
+
+- **React**
+- **React Router DOM**
+- **Tailwind CSS**
+- **LocalStorage API**
+
+---
+
+## 🧩 Folder Structure
+
+src/
+├── App.jsx
+├── main.jsx
+├── index.css
+├── components/
+│ ├── AddPerson.jsx
+│ └── RetrievePerson.jsx
+└── tailwind.config.js
+
+
+---
+
+## 🧪 Local Setup Instructions
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/aadhar-directory-app.git
+   cd aadhar-directory-app
+📄 Validation Rules
+Field	Rule
+Name	Required
+Date of Birth	Required
+Aadhar Number	Exactly 12 digits (numeric)
+Mobile Number	Exactly 10 digits (numeric)
+Age	Auto-calculated
